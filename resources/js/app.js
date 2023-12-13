@@ -2,9 +2,9 @@ import './bootstrap';
 
 import {createApp} from 'vue'
 
-import store from './vue/store/index.js'
+import store from './store/index.js'
 
-import test from './vue/test.vue';
+import test from './vueComponents/test.vue';
 
 const App = createApp({
     created() {

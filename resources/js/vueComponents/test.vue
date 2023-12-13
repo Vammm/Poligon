@@ -1,10 +1,10 @@
 <template>
     <h1 class="">
-        test
+        test 43 sdf
     </h1>
     <button type="button" class="btn">Base class</button>
     <button type="button" class="btn btn-primary">Primary</button>
-
+{{$root.$store.state.test.ppp}}{{test}}
     <div class="card-body text-center">
         <i class="bi bi-bag-heart-fill"></i>
         <i class="bi bi-app"></i>
@@ -19,7 +19,9 @@
 <script>
     export default {
         data() {
-            return {};
+            return {
+                test:'11111',
+            };
         },
         computed: {
 

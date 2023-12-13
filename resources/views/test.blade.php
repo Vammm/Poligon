@@ -8,9 +8,11 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+head
 <div id="app">
     <test></test>
 </div>
+foter
 @vite('resources/js/app.js')
 </body>
 </html>
