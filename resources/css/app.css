@@ -2,3 +2,10 @@
 @import "bootstrap-icons";
 
 @import "/resources/scss/app.scss";
+
+@import "menu_top.css";
+@import "registration.css";
+
+.copy{
+    background: #eee;
+}
