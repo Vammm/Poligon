@@ -1,8 +1,36 @@
 .tab{
-    background: linear-gradient(to bottom, #999, #333);
+    background: linear-gradient(to bottom, #79b6c9,#0a58ca );
     padding: 40px 50px;
     position: relative;
     border-radius: 20px;
+}
+
+.tab .nav-tabs li{ margin: 0 30px 0 0; }
+.tab .nav-tabs li a{
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    margin-right: 0;
+    border: none;
+    opacity: 0.5;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.tab .nav-tabs li a:hover{ background: transparent; }
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:focus,
+.tab .nav-tabs li.active a:hover{
+    border: none;
+    background: transparent;
+    opacity: 1;
+    border-bottom: 2px solid #eec111;
+    color: #fff;
+}
+.btn-info{
+    background: #900 !important;
+}
+.my_btn{
+    background: #000 !important;
 }
 
 /*
