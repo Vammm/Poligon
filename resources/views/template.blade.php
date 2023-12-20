@@ -40,15 +40,7 @@
                         <li>
                             <a href="#!" class="text-body">Link 1</a>
                         </li>
-                        <li>
-                            <a href="#!" class="text-body">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Link 4</a>
-                        </li>
+
                     </ul>
                 </div>
                 <!--Grid column-->
@@ -59,17 +51,9 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!" class="text-body">Link 1</a>
-                        </li>
-                        <li>
                             <a href="#!" class="text-body">Link 2</a>
                         </li>
-                        <li>
-                            <a href="#!" class="text-body">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Link 4</a>
-                        </li>
+
                     </ul>
                 </div>
                 <!--Grid column-->
@@ -88,5 +72,8 @@
     <!-- Footer -->
 </section>
 </body>
+<script>
+    const glb={};
+</script>
 @vite('resources/js/app.js')
 </html>
