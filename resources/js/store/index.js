@@ -3,36 +3,23 @@ import { createStore } from 'vuex'
 
 export default createStore({
     state: {
-        test:{
-            ppp:'tesssstttt',
-        },
-        modal:{},
-        login:{
+        lang:{
+            locale:'en',
             item:{},
-            errors:{},
         },
     },
     actions: {
-        login(context, payload){
-            axios.post('/login', payload)
+        lang(context, pack='vueLang'){
+            let locale = context.state.lang.locale;
+            axios.get('/lang/'+locale+'/'+pack)
                 .then(response => {
-                    context.commit('LOGIN_OK', response.data);
-                })
-                .catch(error => {
-                    context.commit('LOGIN_ERROR', error.response.data);
-                })
+                    context.state.lang.item=response.data;
+                });
         }
     },
     getters: {
     },
     mutations: {
-        LOGIN_OK(state, payload){
-            state.login.errors={};
-            return state.login.item = payload;
-        },
-        LOGIN_ERROR(state, payload){
-            state.login.item={};
-            return state.login.errors = payload;
-        }
+
     }
 });

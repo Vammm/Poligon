@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ًPoligon</title>
+    <title>ًForms</title>
     @vite('resources/css/app.css')
 </head>
 <body>
 
 <div id="app">
+    <App2></App2>
+{{--    <mylogin></mylogin>--}}
 
 </div>
 
