@@ -10,8 +10,8 @@
 <body>
 
 <div id="app">
-    <App2></App2>
-{{--    <mylogin></mylogin>--}}
+    <login></login>
+
 
 </div>
 

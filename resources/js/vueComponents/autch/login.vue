@@ -1,5 +1,8 @@
+
 <template>
-    <form class="form-horizontal">
+    <div class="offcanvas-header text-start">
+     <form class="form-horizontal">
+        <h3>Вход</h3>
         <div class="form-group">
             <label for="exampleInputEmail1">Имя</label>
             <input type="email" class="form-control" id="exampleInputEmail1" v-model="email">
@@ -16,10 +19,12 @@
         </div>
         <div class="d-flex justify-content-between">
             <button type="submit" class="btn btn-success" @click="sendLogin({email,password})">Войти</button>
-
             <button type="submit" class="btn btn-success">Забыли пароль ?</button>
+            
         </div>
     </form>
+</div>   
+    
 </template>
 
 
@@ -32,11 +37,12 @@
             };
         },
         computed: {
+            
         },
         methods: {
-            sendLogin(payload){
-                //this.$store.dispatch('login', payload);
-            },
+            // sendLogin(data){
+            //     console.log(data);
+            //}
 
         },
         mounted() {

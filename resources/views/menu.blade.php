@@ -1,10 +1,20 @@
-<ul class="top_menu">
-    <div class="container">
-        <li><a href="{{route('home')}}" class="active">Home</a></li>
-        <li><a href="{{route('test')}}">Тест</a></li>
-        <li><a href="#contact">Контакты</a></li>
-        <li><a href="#feedback">Обратная связь</a></li>
-        <li><a href="#about">О проекте</a></li>
-        <li><a href="#about" onclick="glb.store.modal.show=1;glb.store.modal.tabActive='login';">Вход</a></li>
-    </div>
-</ul>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ًForms</title>
+    @vite('resources/css/app.css')
+</head>
+<body>
+
+<div id="app">
+    <menu></menu>
+
+
+</div>
+
+</body>
+@vite('resources/js/app.js')
+</html>

@@ -1,27 +1,45 @@
 import './bootstrap'
+
 import {createApp} from 'vue'
 
-const App = createApp({
-    created() {
-    },
-    methods:{
+import login from './vueComponents/autch/login.vue'
+import sign_up from './vueComponents/autch/sign_up.vue'
+import menu from './vueComponents/autch/menu.vue';
 
-    },
-    mounted() {
-        console.log('mounted vue');
-        this.$store.state.lang.locale='ru';
-        this.$store.dispatch('lang');
-    }
-});
 
-import store from './store';
-App.use(store);
+const App = createApp();
 
-import App2 from './App2.vue';
-App.component('App2', App2);
-
-// import mylogin from './vueComponents/autch/login.vue';
-// App.component('mylogin', mylogin);
-
+App.component('login', login);
+App.component('sign_up', sign_up);
+App.component('menu', menu);
 
 App.mount('#app');
+
+
+// import store from './store/index.js'
+// import test from './vueComponents/test.vue';
+// import modal from './vueComponents/autch/modal.vue';
+// import login from './vueComponents/autch/login.vue';
+// import sign_up from './vueComponents/autch/sign_up.vue';
+// import recovery from './vueComponents/autch/recovery.vue';
+
+// const App = createApp({
+//     created() {
+//     },
+//     methods:{
+
+//     },
+//     mounted() {
+//         glb.store=this.$store.state;
+//         console.log('Create app');
+//     }
+// });
+
+// App.component('test', test);
+// App.component('modal', modal);
+// App.component('login', login);
+// App.component('sign_up', sign_up);
+// App.component('recovery', recovery);
+
+// App.use(store);
+// App.mount('#app');

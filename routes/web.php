@@ -14,18 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('menu');
 })->name('home');
-Route::get('/test', function () {
-    return view('test');
-})->name('test');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 
-Route::get('/lang/{locale}/{pack}', function ($locale,$pack) {
-    if (! in_array($locale, ['ru'])) {
-        abort(400);
-    }
-    App::setLocale($locale);
-    return response()->json(Lang::get($pack),210);
-})->name('test');
 
 Route::post('/login', [App\Http\Controllers\UserAuth::class, 'login']);
