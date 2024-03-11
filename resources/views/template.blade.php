@@ -3,11 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/css/solid.min.css">
-    <link rel="stylesheet" href="/css/brands.min.css">
+    
 
-    <title>!!FormsBoot</title>
+    <title>FormsBoot</title>
     @vite('resources/css/app.css')
 </head>
     <body>
@@ -17,10 +15,10 @@
             <div >
 
 
-                @yield('recovery')
+                
                 @yield('menu')
                 @yield('login')
-
+                @yield('recovery')
                 @yield('content2')
             </div>
         @include('footer')
