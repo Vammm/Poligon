@@ -1,17 +1,19 @@
 <template>
-    <form class="form-horizontal">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Имя</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Почта</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn  btn-success">Восстановить</button>
-        </div>
-    </form>
+    <div class="offcanvas-header text-start">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Имя</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Почта</label>
+                <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn  btn-success">Восстановить</button>
+            </div>
+        </form>
+    </div>
 </template>
 
 

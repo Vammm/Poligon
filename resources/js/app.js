@@ -2,17 +2,25 @@ import './bootstrap'
 
 import {createApp} from 'vue'
 
+const App = createApp({
+    created() {
+    },
+    methods:{
+    },
+    mounted() {
+        console.log('Create app');
+    }
+});
+
 import login from './vueComponents/autch/login.vue'
-import sign_up from './vueComponents/autch/sign_up.vue'
-import menu from './vueComponents/autch/menu.vue';
+import menu from './vueComponents/autch/menu.vue'
+import recovery from './vueComponents/autch/recovery.vue';
 
-
-const App = createApp();
+// const App = createApp();
 
 App.component('login', login);
-App.component('sign_up', sign_up);
 App.component('menu', menu);
-
+App.component('recovery', recovery);
 App.mount('#app');
 
 
@@ -30,7 +38,7 @@ App.mount('#app');
 
 //     },
 //     mounted() {
-//         glb.store=this.$store.state;
+       
 //         console.log('Create app');
 //     }
 // });
