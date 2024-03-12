@@ -13,13 +13,12 @@ const App = createApp({
 });
 
 import login from './vueComponents/autch/login.vue'
-import menu from './vueComponents/autch/menu.vue'
+import post from './vueComponents/autch/post.vue'
 import recovery from './vueComponents/autch/recovery.vue';
 
 // const App = createApp();
-
+App.component('post', post);
 App.component('login', login);
-App.component('menu', menu);
 App.component('recovery', recovery);
 App.mount('#app');
 

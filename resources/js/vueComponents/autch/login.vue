@@ -1,6 +1,6 @@
 
 <template>
-    <div class="offcanvas-header text-start">
+    <div class="offcanvas-header text-center">
      <form class="form-horizontal">
         <h3>Вход</h3>
         <div class="form-group">

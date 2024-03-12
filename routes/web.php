@@ -22,10 +22,11 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::get('/', function () {
+    return view('pages.post');
+})->name('post');
+
+Route::get('/template', function () {
     return view('template');
 })->name('template');
 
-Route::get('/menu', function () {
-    return view('pages.menu');
-})->name('menu');
 Route::post('/login', [App\Http\Controllers\UserAuth::class, 'login']);
